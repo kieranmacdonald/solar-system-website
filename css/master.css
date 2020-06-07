@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
     color: #fff;
 }
 
@@ -14,4 +14,68 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+/* Header */
+header {
+    height: 8vh;
+}
+
+header .container {
+    padding: 20px 30px;
+}
+
+header .container h1 {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    float: left;
+}
+
+/* Header Nav */
+header nav {
+    width: 40%;
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+header nav ul li {
+    font-size: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav a:visited {
+    color: #fff;
+}
+
+header nav a:hover {
+    color: rgb(170, 170, 170);
+}
+
+/* Landing Section */
+section {
+    height: 92vh;
+    text-align: center;
+}
+
+section#landing .container {
+    margin-top: 15%;
+}
+
+section#landing h2 {
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    letter-spacing: 0.1em;
+}
+
+section#landing p {
+    
 }

@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Nunito', Arial, Helvetica, sans-serif;
     color: #fff;
@@ -61,8 +65,8 @@ header nav a:hover {
 }
 
 /* Landing Section */
-section {
-    height: 92vh;
+section#landing {
+    height: 62vh;
     text-align: center;
 }
 
@@ -77,5 +81,58 @@ section#landing h2 {
 }
 
 section#landing p {
-    
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    color: rgb(180, 180, 180);
+}
+
+section#landing div .spacerContainer {
+    margin: 20px 0;
+}
+
+section#landing .spacer {
+    width: 200px;
+    margin: 20px 0;
+    border-bottom: 1px solid #fff;
+    margin: auto;
+}
+
+/* Planet Sections */
+section .planet {
+    height: 100vh;
+    padding: 0 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    height: 500px;
+    width: 500px;
+    margin: auto;
+}
+
+.imgContainer {
+    flex: 3;
+    order: 2;
+    display: flex;
+}
+
+.infoBox p {
+    color: rgb(180, 180, 180);
+}
+
+.infoBox h3 {
+    font-size: 25px;
+}
+
+.infoBox:nth-child(2) {
+    flex: 1;
+    order: 1;
+    margin: auto;
+}
+
+.infoBox:nth-child(3) {
+    flex: 1;
+    order: 3;
+    margin: auto;
 }

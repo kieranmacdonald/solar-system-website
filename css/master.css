@@ -35,20 +35,42 @@ header .container h1 {
 }
 
 /* Header Nav */
-header nav {
-    width: 40%;
+header nav#top-nav {
+    width: 45%;
     float: right;
 }
 
 header nav ul {
     list-style: none;
+    margin: 10px;
+}
+
+header nav#top-nav ul {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
 }
 
 header nav ul li {
     font-size: 20px;
+}
+
+header nav#fixed-nav {
+    display: none;
+}
+
+header nav#fixed-nav ul {
+    position: fixed;
+    right: 10px;
+    top: 20px;
+}
+
+header nav#fixed-nav li {
+    float: left;
+    margin-right: 30px;
+}
+
+header nav#fixed-nav ul:nth-child(last) {
+    margin-right: 0;
 }
 
 a {

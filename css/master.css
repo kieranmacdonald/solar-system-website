@@ -13,7 +13,7 @@ body {
 }
 
 html { 
-    background: url(../img/bg.jpg) no-repeat center center fixed; 
+    background: url(../img/bg-min.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -173,4 +173,28 @@ img {
     position: fixed;
     bottom: 20px;
     right: 20px;
+}
+
+@media(max-width:1150px) {
+    header nav ul li {
+        font-size: 15px;
+    }
+    
+    header nav#fixed-nav ul {
+        top: 20px;
+    }
+    
+    header nav#fixed-nav li {
+        margin-right: 15px;
+    }
+    
+    header nav#fixed-nav ul:nth-child(last) {
+        margin-right: 0;
+    }
+
+    img {
+        height: 300px;
+        width: 300px;
+        margin: auto;
+    }
 }

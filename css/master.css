@@ -131,15 +131,17 @@ section#landing .spacer {
 section h1 {
     font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
     font-size: 50px;
-    display: inline;
-    margin-left: 80px;
 }
 
 section .planet {
     height: 100vh;
-    padding: 0 80px;
+    padding: 30px 80px;
+}
+
+section .planetInfo {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 100px;
 }
 
 img {
@@ -181,45 +183,28 @@ img {
     right: 20px;
 }
 
-@media(max-width:1150px) {
-    header nav ul li {
-        font-size: 15px;
+@media(max-width:500px) {
+    section .planet {
+        height: 150vh;
+        padding: 0 80px;
+        display: block;
+        padding-top: 150px;
     }
-    
-    header nav#fixed-nav ul {
-        top: 20px;
-    }
-    
-    header nav#fixed-nav li {
-        margin-right: 15px;
-    }
-    
-    header nav#fixed-nav ul:nth-child(last) {
-        margin-right: 0;
+
+    section h1 {
+        margin: 0;
     }
 
     img {
         height: 300px;
         width: 300px;
-        margin: auto;
+        margin: 10px 0;
     }
 }
 
-@media(max-width:1400px) {
-    header nav#top-nav {
-        width: 60%;
-    }
-}
-
-@media(max-width:850px) {
-    header nav#top-nav {
-        float: none;
-        margin: auto;
-    }
-
-    header .container h1 {
-        float: none;
-        text-align: center;
+@media(max-width:550px) {
+    section#landing .container {
+        margin-top: 70%;
     }
 }
 
@@ -250,38 +235,40 @@ img {
     }
 }
 
-@media(max-width:550px) {
-    section#landing .container {
-        margin-top: 70%;
+@media(max-width:1150px) {
+    header nav ul li {
+        font-size: 15px;
+    }
+    
+    header nav#fixed-nav li {
+        margin-right: 15px;
+    }
+    
+    header nav#fixed-nav ul:nth-child(last) {
+        margin-right: 0;
+    }
+
+    /* img {
+        height: 300px;
+        width: 300px;
+        margin: auto;
+    } */
+}
+
+@media(max-width:1400px) {
+    header nav#top-nav {
+        width: 60%;
     }
 }
 
-@media(max-width:600px) {
-    img {
-        height: 200px;
-        width: 200px;
+@media(max-width:850px) {
+    header nav#top-nav {
+        float: none;
         margin: auto;
     }
 
-    section h1 {
-        padding-top: 100px;
-    }
-
-    section div.planet:nth-child(2) {
-    }
-}
-
-@media(min-width:600px) {
-    section .planet {
-    }
-
-    section h1 {
-        padding-top: 50px;
-    }
-}
-
-@media(max-width:900px) {
-    header nav#fixed ul {
+    header .container h1 {
+        float: none;
         text-align: center;
     }
 }
